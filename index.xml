@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Éric Renaud-Houde</title>
+    <link>https://num3ric.github.io/</link>
+    <description>Recent content on Éric Renaud-Houde</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 06 Oct 2019 18:25:22 -0400</lastBuildDate>
+    
+	<atom:link href="https://num3ric.github.io/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Balenciaga</title>
+      <link>https://num3ric.github.io/portfolio/11-balenciaga/</link>
+      <pubDate>Sun, 06 Oct 2019 18:25:22 -0400</pubDate>
+      
+      <guid>https://num3ric.github.io/portfolio/11-balenciaga/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Tónandi</title>
+      <link>https://num3ric.github.io/portfolio/09-tonandi/</link>
+      <pubDate>Sun, 06 Oct 2019 18:25:22 -0400</pubDate>
+      
+      <guid>https://num3ric.github.io/portfolio/09-tonandi/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>AICP 2018 Title Sequence</title>
+      <link>https://num3ric.github.io/portfolio/10-aicp/</link>
+      <pubDate>Thu, 05 Sep 2019 18:25:22 +0530</pubDate>
+      
+      <guid>https://num3ric.github.io/portfolio/10-aicp/</guid>
+      <description>&lt;p&gt;For the 26th iteration of AICP Show at MoMA, The Mill was given the opportunity to design a title sequence and show package for both the AICP Next Awards and the AICP Show.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Human Race / Cyclops</title>
+      <link>https://num3ric.github.io/portfolio/09-human-race/</link>
+      <pubDate>Sat, 05 Nov 2016 19:59:22 +0530</pubDate>
+      
+      <guid>https://num3ric.github.io/portfolio/09-human-race/</guid>
+      <description>&lt;p&gt;This year at GDC 2017, we were fortunate enough to showcase both our augmented reality production toolkit and a bespoke real-time film during Epic Game&amp;rsquo;s state of Unreal Engine keynote.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>IBM Watson</title>
+      <link>https://num3ric.github.io/portfolio/08-watson/</link>
+      <pubDate>Sat, 05 Nov 2016 19:44:32 +0530</pubDate>
+      
+      <guid>https://num3ric.github.io/portfolio/08-watson/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Lexus Ride The Slide</title>
+      <link>https://num3ric.github.io/portfolio/07-lexus/</link>
+      <pubDate>Sat, 05 Nov 2016 19:50:47 +0530</pubDate>
+      
+      <guid>https://num3ric.github.io/portfolio/07-lexus/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Élytre AntiVJ</title>
+      <link>https://num3ric.github.io/portfolio/06-antivj/</link>
+      <pubDate>Sat, 05 Nov 2016 19:57:40 +0530</pubDate>
+      
+      <guid>https://num3ric.github.io/portfolio/06-antivj/</guid>
+      <description>Custom generative software for led mapping Le Flow in Paris.</description>
+    </item>
+    
+    <item>
+      <title>Cinder-OculusRift</title>
+      <link>https://num3ric.github.io/portfolio/04-oculus/</link>
+      <pubDate>Sat, 05 Nov 2016 19:41:01 +0530</pubDate>
+      
+      <guid>https://num3ric.github.io/portfolio/04-oculus/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>&#39;Beneath the Surface&#39; Chrysler VR</title>
+      <link>https://num3ric.github.io/portfolio/03-chryslervr/</link>
+      <pubDate>Sun, 05 Nov 2017 18:25:22 +0530</pubDate>
+      
+      <guid>https://num3ric.github.io/portfolio/03-chryslervr/</guid>
+      <description>&lt;p&gt;&amp;lsquo;Beneath the Surface&amp;rsquo; is an interactive virtual reality experience—made in part by MPC New York—to promote the Chrysler 200. It was first showcased at the 2014 Los Angeles Auto Show.&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Ménage à Trois</title>
+      <link>https://num3ric.github.io/portfolio/05-menage/</link>
+      <pubDate>Sat, 05 Nov 2016 19:56:17 +0530</pubDate>
+      
+      <guid>https://num3ric.github.io/portfolio/05-menage/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>X Factor Kaleidoscope</title>
+      <link>https://num3ric.github.io/portfolio/02-xfactor/</link>
+      <pubDate>Sat, 05 Nov 2016 19:53:42 +0530</pubDate>
+      
+      <guid>https://num3ric.github.io/portfolio/02-xfactor/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Beyond Rubik&#39;s Cube</title>
+      <link>https://num3ric.github.io/portfolio/01-rubik/</link>
+      <pubDate>Thu, 05 Nov 2015 20:23:59 +0530</pubDate>
+      
+      <guid>https://num3ric.github.io/portfolio/01-rubik/</guid>
+      <description>&lt;p&gt;The Beyond Rubik’s Cube Entryway is an interactive piece that serves as an immersive introduction to the Beyond Rubik’s Cube exhibition.&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

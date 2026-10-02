@@ -105,3 +105,28 @@
 .minimal-site .archive-subtitle { display: block; font-weight: 400; }
 
 .minimal-site .link-arrow { display: inline-block; margin-left: 0.35em; font-size: 0.8em; text-decoration: none; }
+
+/* Archive previews occupy the outer margin; the text list never moves.
+   Touch and narrow screens keep the plain list. GIFs have still fallbacks. */
+.minimal-site .project-preview { display: none; }
+@media (hover: hover) and (pointer: fine) and (min-width: 1000px) {
+    .minimal-site .project-list li { position: relative; }
+    .minimal-site .project-preview {
+        position: absolute;
+        z-index: 1;
+        left: 100%;
+        top: 50%;
+        transform: translateY(-50%);
+        width: min(264px, calc((100vw - var(--content-width)) / 2));
+        padding-left: var(--space-24);
+        line-height: 0;
+    }
+    .minimal-site .project-preview img {
+        display: block;
+        width: 100%;
+        max-height: 180px;
+        object-fit: contain;
+    }
+    .minimal-site .project-list a:hover .project-preview,
+    .minimal-site .project-list a:focus-visible .project-preview { display: block; }
+}

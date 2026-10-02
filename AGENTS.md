@@ -47,6 +47,11 @@ spacing, and layout. Keep the homepage static: entrance fades were tried and
 removed at the owner's request. Category links use decorative diagonal arrows
 with `aria-hidden="true"`; preserve meaningful link names and keyboard focus.
 
+The archive uses CSS-only hover/focus media previews in the outer margin on
+wide screens with a fine pointer. Reuse existing imagery; GIF sources are
+limited to no-preference motion users, with still-image fallbacks. Touch and
+narrow screens retain the plain list.
+
 The archive lists all 11 historical projects with project years, not RSS or
 page-publication dates. Ménage à Trois's 2014 date is provisional, based on the
 owner's recollection. Preserve project detail URLs under `/portfolio/` and the

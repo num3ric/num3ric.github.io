@@ -46,7 +46,8 @@ The opening uses Georgia italic; all other text uses the system sans-serif.
 
 Use the scoped CSS custom properties in `.minimal-site` for colors, type,
 spacing, and layout. Keep the homepage static: entrance fades were tried and
-removed at the owner's request. Category links use decorative diagonal arrows
+removed at the owner's request. External web links and the email link on the
+homepage use decorative diagonal arrows; internal links do not. Arrows are marked
 with `aria-hidden="true"`; preserve meaningful link names and keyboard focus.
 
 The archive uses CSS-only hover/focus media previews in the outer margin on

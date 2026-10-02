@@ -35,7 +35,7 @@ def main():
     args = parser.parse_args()
     handler = partial(PreviewHandler, directory=str(ROOT))
     with ThreadingHTTPServer(('127.0.0.1', args.port), handler) as server:
-        print(f'Preview: http://127.0.0.1:{args.port}/portfolio/', flush=True)
+        print(f'Preview: http://127.0.0.1:{args.port}/', flush=True)
         try:
             server.serve_forever()
         except KeyboardInterrupt:

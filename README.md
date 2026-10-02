@@ -14,7 +14,7 @@ Requires Python 3; no third-party dependencies.
 python3 scripts/preview.py
 ```
 
-Open http://127.0.0.1:8000/portfolio/. Stop the server with Ctrl+C.
+Open http://127.0.0.1:8000/. Stop the server with Ctrl+C.
 To choose another port, add `--port 8001`.
 
 The preview serves the checkout and rewrites absolute site URLs in text

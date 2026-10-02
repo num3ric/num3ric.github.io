@@ -10,11 +10,13 @@ is required. Do not assume a Hugo rebuild is available.
 
 ## Where to make changes
 
-- `index.html`: immediate redirect to `/portfolio/`.
-- `portfolio/index.html`: project grid and summaries.
+- `index.html`: minimal, text-only homepage.
+- `archive/index.html`: text-based collection of all historical projects.
+- `portfolio/index.html`: compatibility redirect to `/archive/`.
 - `portfolio/<project>/index.html`: individual project pages.
 - `about/index.html`: biography.
-- `css/custom.css`: preferred place for style overrides.
+- `css/custom.css`: preferred place for style overrides; `.minimal-site` scopes
+  homepage/archive styles away from historical pages.
 - `css/style.red.css`: active theme, layered over Bootstrap.
 - `js/front.js`: site behavior (Masonry, off-canvas menu, lightboxes, carousels).
 - `img/`: project imagery and thumbnails.
@@ -24,7 +26,7 @@ is required. Do not assume a Hugo rebuild is available.
 Shared sidebar, navigation, stylesheets, and scripts are duplicated across HTML
 pages. For shared changes, locate all occurrences with `rg` and update them
 consistently, including auxiliary pages where applicable. For project changes,
-check the detail page, portfolio grid, sitemap, and feeds for related updates.
+check the detail page, archive collection, sitemap, and feeds for related updates.
 Preserve existing public project URLs unless the user requests changing them.
 
 Keep changes focused. Avoid editing bundled/minified libraries, font files, or
@@ -36,7 +38,7 @@ separate task. Do not invent biographical facts, project roles, or dates.
 ## Local preview
 
 Run `python3 scripts/preview.py` and open
-http://127.0.0.1:8000/portfolio/ (or `/about/`). Use `--port 8001` if needed.
+http://127.0.0.1:8000/ (or `/archive/`). Use `--port 8001` if needed.
 The preview rewrites production-origin URLs in HTML, CSS, and XML responses to
 local paths, including the homepage redirect. Files on disk remain unchanged.
 External fonts, media embeds, and outbound links still require network access.
@@ -52,7 +54,7 @@ There is no existing automated test suite. Match validation to the change:
 - For interaction changes, exercise the affected menu, carousel, or lightbox.
 - For content/link changes, verify local targets and parse modified XML with
   Python's `xml.etree.ElementTree`.
-- When changing shared markup, check both the portfolio grid and a detail page.
+- When changing shared markup, check the homepage, archive collection, and a detail page.
 
 Report what changed, what was actually checked, and any unverified behavior.
 Do not commit, push, or deploy unless the user requests it.

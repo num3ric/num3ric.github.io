@@ -130,3 +130,42 @@
     .minimal-site .project-list a:hover .project-preview,
     .minimal-site .project-list a:focus-visible .project-preview { display: block; }
 }
+
+/* Project pages share the minimal site's reading column and type tokens. */
+.minimal-site .project-content h1 { font-size: 24px; line-height: 1.4; }
+.minimal-site .project-content h2,
+.minimal-site .project-content h3 {
+    font-size: var(--font-size-body);
+    font-weight: 500;
+    margin: var(--space-32) 0 var(--space-16);
+}
+.minimal-site .project-content img { display: block; width: 100%; height: auto; }
+.minimal-site .project-content iframe { max-width: 100%; }
+.minimal-site .project-content ul { padding-left: var(--space-24); margin-bottom: var(--space-24); }
+.minimal-site .project-content li { margin-bottom: var(--space-4); overflow-wrap: anywhere; }
+.minimal-site .project-content a { overflow-wrap: anywhere; }
+.minimal-site .project-content blockquote {
+    margin: var(--space-32) 0;
+    padding-left: var(--space-16);
+    border-left: 1px solid var(--color-divider);
+}
+.minimal-site .project-gallery {
+    display: flex;
+    overflow-x: auto;
+    gap: var(--space-16);
+    scroll-snap-type: x mandatory;
+    margin: var(--space-24) 0;
+}
+.minimal-site .project-gallery:focus-visible { outline: 2px solid var(--color-text); outline-offset: 5px; }
+.minimal-site .project-gallery figure { flex: 0 0 100%; min-width: 0; margin: 0; scroll-snap-align: start; }
+.minimal-site .project-gallery img { aspect-ratio: 16 / 9; object-fit: contain; }
+.minimal-site .project-footer { margin-top: var(--space-48); padding-top: var(--space-24); border-top: 1px solid var(--color-divider); }
+
+.minimal-site .gallery-controls:not([hidden]) { display: flex; justify-content: center; gap: var(--space-16); }
+.minimal-site .gallery-controls button { border: 0; background: none; color: var(--color-text); font: inherit; font-size: 24px; width: 40px; height: 40px; cursor: pointer; }
+.minimal-site .gallery-controls button:disabled { opacity: 0.3; cursor: default; }
+.minimal-site .gallery-controls button:focus-visible { outline: 2px solid var(--color-text); outline-offset: 2px; }
+.minimal-site .project-gallery:has(+ .gallery-controls) { margin-bottom: var(--space-4); }
+.minimal-site .gallery-controls { margin-bottom: var(--space-24); }
+
+.minimal-site .project-video { margin-bottom: var(--space-24); }

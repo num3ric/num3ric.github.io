@@ -14,25 +14,27 @@ is required. Do not assume a Hugo rebuild is available.
 - `archive/index.html`: text-based collection of all historical projects.
 - `portfolio/index.html`: compatibility redirect to `/archive/`.
 - `portfolio/<project>/index.html`: individual project pages.
-- `about/index.html`: biography.
+- `about/index.html`: compatibility redirect to the homepage.
 - `css/custom.css`: preferred place for style overrides; `.minimal-site` scopes
-  homepage/archive styles away from historical pages.
+  homepage, archive, and project styles away from legacy auxiliary pages.
 - `css/style.red.css`: historical project-page theme, layered over Bootstrap.
 - `js/front.js`: historical page behavior (off-canvas menu, lightboxes, carousels).
 - `img/`: project imagery and thumbnails.
 - `sitemap.xml` and `**/index.xml`: sitemap and RSS feeds.
 - `404.html`, `categories/`, `tags/`: auxiliary pages.
 
-Historical pages duplicate their sidebar, navigation, stylesheets, and scripts. For shared changes, locate all occurrences with `rg` and update them
+Legacy auxiliary pages duplicate their sidebar, navigation, stylesheets, and scripts. For shared changes, locate all occurrences with `rg` and update them
 consistently, including auxiliary pages where applicable. For project changes,
 check the detail page, archive collection, sitemap, and feeds for related updates.
 Preserve existing public project URLs unless the user requests changing them.
 
 Keep changes focused. Avoid editing bundled/minified libraries, font files, or
 all theme variants for a change that belongs in `css/custom.css` or `js/front.js`.
-Historical pages use Bootstrap 3 and jQuery-era plugins; preserve their markup
-and script order when changing existing interactions. The homepage and archive
-use only HTML and `css/custom.css`, with no JavaScript or external font loads. A framework migration is a
+Legacy auxiliary pages use Bootstrap 3 and jQuery-era plugins; preserve their markup
+and script order when changing existing interactions. The homepage, archive, and project pages
+use HTML and `css/custom.css`, with no external font loads. Project galleries use `js/project-gallery.js`
+for progressive Previous/Next arrow controls.
+Project pages may retain third-party scripts for existing social embeds. A framework migration is a
 separate task. Do not invent biographical facts, project roles, or dates.
 
 ## Current design conventions
@@ -55,8 +57,9 @@ narrow screens retain the plain list.
 The archive lists all 11 historical projects with project years, not RSS or
 page-publication dates. Ménage à Trois's 2014 date is provisional, based on the
 owner's recollection. Preserve project detail URLs under `/portfolio/` and the
-`/portfolio/` redirect to `/archive/`. The legacy biography at `/about/` is not
-the source of truth for current homepage copy.
+`/portfolio/` redirect to `/archive/`. The former biography at `/about/` redirects to the homepage. Project galleries
+use native horizontal scrolling and scroll snap, with Previous/Next arrows; preserve
+all media and prose when editing them.
 
 ## Local preview
 

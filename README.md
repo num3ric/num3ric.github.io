@@ -12,11 +12,12 @@ Changes are made directly to these files.
 - `/archive/`: earlier creative technology projects, organized by project year.
 - `/portfolio/<project>/`: historical project pages and their existing media.
 - `/portfolio/`: compatibility redirect to the archive.
-- `/about/`: legacy biography page.
+- `/about/`: compatibility redirect to the homepage.
 
-The homepage and archive use plain HTML and scoped styles in `css/custom.css`.
-They load no JavaScript or external fonts. Historical project pages retain the
-original Bootstrap/jQuery theme. There is no build step or automated test suite.
+The homepage, archive, and project pages use plain HTML and scoped styles in
+`css/custom.css`, without external fonts. Project image
+galleries use native scrolling with a small script for Previous/Next arrows; existing video and social embeds remain.
+Legacy auxiliary pages retain the original Bootstrap/jQuery theme. There is no build step or automated test suite.
 
 ## Preview locally
 

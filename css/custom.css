@@ -98,6 +98,8 @@
 @media (max-width: 600px) {
     .minimal-site .page { margin-top: var(--space-64); }
     .minimal-site .home-links { grid-template-columns: 1fr; gap: var(--space-32); margin-top: var(--space-48); }
+    .minimal-site .home-links .description { display: inline; }
+    .minimal-site .home-links .description::before { content: " "; }
     .minimal-site .project-list li { grid-template-columns: 1fr; gap: 0; }
 }
 

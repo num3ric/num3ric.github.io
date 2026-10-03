@@ -53,6 +53,7 @@
     margin: 0;
 }
 .minimal-site h1 { margin-bottom: var(--space-32); }
+.minimal-site.homepage .page { margin-top: calc(var(--space-64) + var(--space-48)); }
 .minimal-site h2 { margin-bottom: var(--space-16); font-weight: 400; }
 .minimal-site .home-links h2,
 .minimal-site .connect h2 { font-weight: 500; }
@@ -81,6 +82,11 @@
     line-height: var(--line-height-compact);
 }
 .minimal-site .connect { margin-top: calc(var(--space-32) + var(--space-24)); }
+.minimal-site.homepage h1 { margin-bottom: var(--space-24); }
+.minimal-site.homepage .home-links { margin-top: var(--space-48); }
+.minimal-site.homepage .home-links p { margin-bottom: calc(var(--space-16) + var(--space-4)); }
+.minimal-site.homepage .home-links section > p:last-child { margin-bottom: 0; }
+.minimal-site.homepage .connect { margin-top: calc(var(--space-24) + var(--space-16)); }
 .minimal-site .contact-links { display: flex; flex-wrap: wrap; gap: var(--space-24); list-style: none; padding: 0; margin: 0; }
 .minimal-site .contact-links li { margin-bottom: var(--space-4); }
 .minimal-site .back-link { margin-bottom: var(--space-48); }
@@ -96,7 +102,9 @@
 .minimal-site .project-year { font-size: var(--font-size-caption); font-variant-numeric: tabular-nums; }
 @media (max-width: 600px) {
     .minimal-site .page { margin-top: var(--space-64); }
+    .minimal-site.homepage .page { margin-top: calc(var(--space-32) + var(--space-24)); }
     .minimal-site .home-links { grid-template-columns: 1fr; gap: var(--space-32); margin-top: var(--space-48); }
+    .minimal-site.homepage .home-links { gap: var(--space-24); margin-top: calc(var(--space-32) + var(--space-4)); }
     .minimal-site .home-links .description { display: inline; }
     .minimal-site .home-links .description::before { content: " "; }
     .minimal-site .project-list li { grid-template-columns: 1fr; gap: 0; }

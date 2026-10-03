@@ -57,6 +57,8 @@
 }
 .minimal-site h1 { margin-bottom: var(--space-32); }
 .minimal-site h2 { margin-bottom: var(--space-16); font-weight: 400; }
+.minimal-site .home-links h2,
+.minimal-site .connect h2 { font-weight: 500; }
 .minimal-site p { margin: 0 0 var(--space-24); }
 .minimal-site a {
     color: inherit;

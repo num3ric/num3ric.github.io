@@ -41,7 +41,7 @@ separate task. Do not invent biographical facts, project roles, or dates.
 
 The homepage is a quiet, text-only introduction with three columns that stack
 on mobile: Current work, Open Source, and Earlier work. Contact links sit below
-an Elsewhere heading. Keep the maker emphasis and concise, owner-approved copy.
+a Contact heading. Keep the maker emphasis and concise, owner-approved copy.
 The opening uses Georgia italic; all other text uses the system sans-serif.
 
 Use the scoped CSS custom properties in `.minimal-site` for colors, type,

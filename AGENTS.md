@@ -15,27 +15,22 @@ is required. Do not assume a Hugo rebuild is available.
 - `portfolio/index.html`: compatibility redirect to `/archive/`.
 - `portfolio/<project>/index.html`: individual project pages.
 - `about/index.html`: compatibility redirect to the homepage.
-- `css/custom.css`: preferred place for style overrides; `.minimal-site` scopes
-  homepage, archive, and project styles away from legacy auxiliary pages.
-- `css/style.red.css`: historical project-page theme, layered over Bootstrap.
-- `js/front.js`: historical page behavior (off-canvas menu, lightboxes, carousels).
+- `css/custom.css`: shared styles, scoped under `.minimal-site`.
+- `js/project-gallery.js`: progressive Previous/Next gallery arrow controls.
 - `img/`: project imagery and thumbnails.
-- `sitemap.xml` and `**/index.xml`: sitemap and RSS feeds.
-- `404.html`, `categories/`, `tags/`: auxiliary pages.
+- `sitemap.xml`, `index.xml`, and `portfolio/index.xml`: sitemap and historical RSS feeds.
+- `404.html`: minimal missing-page fallback used by GitHub Pages.
 
-Legacy auxiliary pages duplicate their sidebar, navigation, stylesheets, and scripts. For shared changes, locate all occurrences with `rg` and update them
-consistently, including auxiliary pages where applicable. For project changes,
-check the detail page, archive collection, sitemap, and feeds for related updates.
-Preserve existing public project URLs unless the user requests changing them.
+For shared changes, locate all occurrences with `rg` and update them consistently.
+For project changes, check the detail page, archive collection, sitemap, and feeds
+for related updates. Preserve existing public project URLs unless the user requests
+changing them.
 
-Keep changes focused. Avoid editing bundled/minified libraries, font files, or
-all theme variants for a change that belongs in `css/custom.css` or `js/front.js`.
-Legacy auxiliary pages use Bootstrap 3 and jQuery-era plugins; preserve their markup
-and script order when changing existing interactions. The homepage, archive, and project pages
-use HTML and `css/custom.css`, with no external font loads. Project galleries use `js/project-gallery.js`
-for progressive Previous/Next arrow controls.
-Project pages may retain third-party scripts for existing social embeds. A framework migration is a
-separate task. Do not invent biographical facts, project roles, or dates.
+The site uses plain HTML, `css/custom.css`, and system fonts. The old taxonomy pages,
+Bootstrap/jQuery theme, bundled fonts, and plugins have been removed. Keep changes
+focused and preserve existing media and prose. Project pages may retain third-party
+scripts for existing social embeds. A framework migration is a separate task.
+Do not invent biographical facts, project roles, or dates.
 
 ## Current design conventions
 
@@ -68,7 +63,7 @@ Run `python3 scripts/preview.py` and open
 http://127.0.0.1:8000/ (or `/archive/`). Use `--port 8001` if needed.
 The preview rewrites production-origin URLs in HTML, CSS, and XML responses to
 local paths, including redirects on historical entry points. Files on disk remain unchanged.
-External fonts, media embeds, and outbound links still require network access.
+Media embeds and outbound links still require network access.
 A plain static server would load many assets and navigation destinations from
 the live site, so use this preview when checking local edits.
 

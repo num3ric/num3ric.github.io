@@ -17,7 +17,8 @@ Changes are made directly to these files.
 The homepage, archive, and project pages use plain HTML and scoped styles in
 `css/custom.css`, without external fonts. Project image
 galleries use native scrolling with a small script for Previous/Next arrows; existing video and social embeds remain.
-Legacy auxiliary pages retain the original Bootstrap/jQuery theme. There is no build step or automated test suite.
+The 404 page uses the same minimal styles. There are no bundled third-party
+frontend dependencies, build step, or automated test suite.
 
 ## Preview locally
 
@@ -32,7 +33,7 @@ To choose another port, add `--port 8001`.
 
 The preview serves the checkout and rewrites absolute site URLs in text
 responses so historical-page navigation and assets use local files.
-It does not modify the published files. Third-party fonts and embedded media
+It does not modify the published files. Embedded media
 still use their external services. The server binds only to the local machine.
 
 See [AGENTS.md](AGENTS.md) for the repository map, editing conventions, and

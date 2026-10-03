@@ -1,12 +1,9 @@
-/* your styles go here */
-
+/* Shared styles for the homepage, archive, project pages, and 404 page. */
 .fixed-200-centered {
     max-width: 200px;
     margin: auto;
 }
 
-
-/* Minimal homepage and archive. Historical project pages keep their theme. */
 .minimal-site {
     /* Semantic colors for the minimal pages, independent of the legacy theme. */
     --color-surface: #fff;

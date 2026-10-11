@@ -10,13 +10,14 @@ is required. Do not assume a Hugo rebuild is available.
 
 ## Where to make changes
 
-- `index.html`: minimal, text-only homepage.
+- `index.html`: minimal homepage, text apart from the animated shape mark.
 - `archive/index.html`: text-based collection of all historical projects.
 - `portfolio/index.html`: compatibility redirect to `/archive/`.
 - `portfolio/<project>/index.html`: individual project pages.
 - `about/index.html`: compatibility redirect to the homepage.
 - `css/custom.css`: shared styles, scoped under `.minimal-site`.
 - `js/project-gallery.js`: progressive Previous/Next gallery arrow controls.
+- `js/home-shape.js`: the homepage's animated shape mark beside the name.
 - `img/`: project imagery and thumbnails.
 - `sitemap.xml`, `index.xml`, and `portfolio/index.xml`: sitemap and historical RSS feeds.
 - `404.html`: minimal missing-page fallback used by GitHub Pages.
@@ -34,7 +35,7 @@ Do not invent biographical facts, project roles, or dates.
 
 ## Current design conventions
 
-The homepage is a quiet, text-only introduction with three columns that stack
+The homepage is a quiet text introduction with three columns that stack
 on mobile: Current work, Open source, and Earlier work. Contact links sit below
 a Contact heading. Keep the maker emphasis and concise, owner-approved copy.
 The opening sentence is a standalone Georgia italic display line; all other text
@@ -45,8 +46,14 @@ page titles use the title size, the homepage name is body size, and homepage
 section labels are secondary-colored captions.
 
 Use the scoped CSS custom properties in `.minimal-site` for colors, type,
-spacing, and layout. Keep the homepage static: entrance fades were tried and
-removed at the owner's request. External web links and the email link on the
+spacing, and layout. Keep the homepage otherwise static: entrance fades were
+tried and removed at the owner's request. The one exception is the shape mark
+after the name: a circle, triangle, and square at the name's cap height that
+hop, spin clockwise, and morph into the next arrangement. Colors are fixed by
+position (red, green, blue, left to right), overlaps blend additively (yellow,
+cyan), and every straight edge cuts 0.3 of the shape height into its neighbour.
+The static markup shows the resting row without JavaScript; reduced-motion users
+get a still row that changes on hover or tap. External web links and the email link on the
 homepage use decorative diagonal arrows; internal links do not. Arrows are marked
 with `aria-hidden="true"`; preserve meaningful link names and keyboard focus.
 

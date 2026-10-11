@@ -100,6 +100,15 @@
 }
 .minimal-site .connect { margin-top: calc(var(--space-32) + var(--space-24)); }
 .minimal-site.homepage h1 { margin-bottom: var(--space-24); }
+.minimal-site .home-header { display: flex; align-items: center; gap: 0.75em; margin-bottom: var(--space-24); }
+.minimal-site.homepage .home-header h1 { flex: none; margin-bottom: 0; }
+/* Shapes read red, green, blue by position; overlaps add like light, so they
+   show the secondaries (yellow, cyan). Screen is the fallback. */
+.minimal-site .home-shape { display: block; flex: none; overflow: visible; isolation: isolate; }
+.minimal-site .home-shape path { mix-blend-mode: screen; mix-blend-mode: plus-lighter; }
+.minimal-site .home-shape path:nth-child(1) { fill: #e0362c; }
+.minimal-site .home-shape path:nth-child(2) { fill: #1e9e4a; }
+.minimal-site .home-shape path:nth-child(3) { fill: #2f5bea; }
 .minimal-site.homepage .home-links { margin-top: var(--space-48); }
 .minimal-site.homepage .home-links p { margin-bottom: calc(var(--space-16) + var(--space-4)); }
 .minimal-site.homepage .home-links section > p:last-child { margin-bottom: 0; }

@@ -35,9 +35,14 @@ Do not invent biographical facts, project roles, or dates.
 ## Current design conventions
 
 The homepage is a quiet, text-only introduction with three columns that stack
-on mobile: Current work, Open Source, and Earlier work. Contact links sit below
+on mobile: Current work, Open source, and Earlier work. Contact links sit below
 a Contact heading. Keep the maker emphasis and concise, owner-approved copy.
-The opening uses Georgia italic; all other text uses the system sans-serif.
+The opening sentence is a standalone Georgia italic display line; all other text
+uses the system sans-serif. The homepage row is wider (`--home-width`) than the
+640px reading column; the introduction paragraph stays at the reading width.
+Type follows one scale (caption 14, body 16, title 21, display 26/22 mobile):
+page titles use the title size, the homepage name is body size, and homepage
+section labels are secondary-colored captions.
 
 Use the scoped CSS custom properties in `.minimal-site` for colors, type,
 spacing, and layout. Keep the homepage static: entrance fades were tried and

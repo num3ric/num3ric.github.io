@@ -13,14 +13,17 @@
     --color-underline: #8c8c8c;
     --color-divider: #e9e9e9;
 
-    /* Shared type and rhythm; compact leading is for short descriptions. */
+    /* Shared type and rhythm. Scale: caption, body, title, display.
+       Compact leading is for short descriptions. */
     --font-body: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
     --font-editorial: Georgia, "Times New Roman", serif;
+    --font-size-caption: 14px;
     --font-size-body: 16px;
-    --font-size-editorial: 18px;
-    --font-size-caption: 13px;
-    --line-height-prose: 1.8;
-    --line-height-compact: 1.6;
+    --font-size-title: 21px;
+    --font-size-display: 26px;
+    --line-height-prose: 1.6;
+    --line-height-compact: 1.5;
+    --line-height-display: 1.2;
     --space-4: 4px;
     --space-16: 16px;
     --space-24: 24px;
@@ -30,6 +33,7 @@
 
     /* Layout and archive row insets. */
     --content-width: 640px;
+    --home-width: 760px;
     --page-gutter: var(--space-24);
     --archive-row-inset: 14px;
 
@@ -51,13 +55,19 @@
     font: inherit;
     font-weight: 500;
     margin: 0;
+    text-wrap: balance;
 }
-.minimal-site h1 { margin-bottom: var(--space-32); }
-.minimal-site.homepage .page { margin-top: calc(var(--space-64) + var(--space-48)); }
+.minimal-site h1 { font-size: var(--font-size-title); line-height: 1.4; margin-bottom: var(--space-32); }
+.minimal-site.homepage .page {
+    width: min(var(--home-width), calc(100% - 2 * var(--page-gutter)));
+    margin-top: calc(var(--space-64) + var(--space-48));
+}
 .minimal-site h2 { margin-bottom: var(--space-16); font-weight: 400; }
+/* Homepage: the name is a quiet header, section labels sit below body text. */
+.minimal-site.homepage h1 { font-size: var(--font-size-body); font-weight: 500; }
 .minimal-site .home-links h2,
-.minimal-site .connect h2 { font-weight: 500; }
-.minimal-site p { margin: 0 0 var(--space-24); }
+.minimal-site .connect h2 { font-size: var(--font-size-caption); color: var(--color-text-secondary); }
+.minimal-site p { margin: 0 0 var(--space-24); text-wrap: pretty; }
 .minimal-site a {
     color: inherit;
     text-decoration: underline;
@@ -74,7 +84,14 @@
     gap: var(--space-32);
     margin-top: var(--space-64);
 }
-.minimal-site .introduction em { font-family: var(--font-editorial); font-size: var(--font-size-editorial); }
+.minimal-site .introduction { max-width: var(--content-width); }
+.minimal-site .introduction .lede {
+    font-family: var(--font-editorial);
+    font-style: italic;
+    font-size: var(--font-size-display);
+    line-height: var(--line-height-display);
+    margin-bottom: var(--space-16);
+}
 .minimal-site .home-links section > p:last-child { margin-bottom: 0; }
 .minimal-site .description {
     display: block;
@@ -101,6 +118,7 @@
 }
 .minimal-site .project-year { font-size: var(--font-size-caption); font-variant-numeric: tabular-nums; }
 @media (max-width: 600px) {
+    .minimal-site { --font-size-display: 22px; }
     .minimal-site .page { margin-top: var(--space-64); }
     .minimal-site.homepage .page { margin-top: calc(var(--space-32) + var(--space-24)); }
     .minimal-site .home-links { grid-template-columns: 1fr; gap: var(--space-32); margin-top: var(--space-48); }
@@ -111,7 +129,7 @@
 }
 
 .minimal-site .archive-heading { margin-bottom: 0; }
-.minimal-site .archive-subtitle { display: block; font-weight: 400; }
+.minimal-site .archive-subtitle { display: block; font-size: var(--font-size-body); font-weight: 400; line-height: var(--line-height-prose); }
 
 .minimal-site .link-arrow { display: inline-block; margin-left: 0.35em; font-size: 0.8em; text-decoration: none; }
 
@@ -141,7 +159,6 @@
 }
 
 /* Project pages share the minimal site's reading column and type tokens. */
-.minimal-site .project-content h1 { font-size: 24px; line-height: 1.4; }
 .minimal-site .project-content h2,
 .minimal-site .project-content h3 {
     font-size: var(--font-size-body);

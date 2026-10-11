@@ -35,9 +35,10 @@ Do not invent biographical facts, project roles, or dates.
 
 ## Current design conventions
 
-The homepage is a quiet text introduction with three columns that stack
-on mobile: Current work, Open source, and Earlier work. Contact links sit below
-a Contact heading. Keep the maker emphasis and concise, owner-approved copy.
+The homepage is a quiet text introduction with two columns that stack
+on mobile: Current work (Unreal Engine and OpenColorIO) and Earlier work
+(Project archive and Cinder). Email, LinkedIn, and GitHub sit below a Contact
+heading. Keep the maker emphasis and concise, owner-approved copy.
 The opening sentence is a standalone Georgia italic display line; all other text
 uses the system sans-serif. The homepage row is wider (`--home-width`) than the
 640px reading column; the introduction paragraph stays at the reading width.
